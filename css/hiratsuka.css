@@ -168,6 +168,12 @@
   }
 }
 
+@media (max-width: 800px) {
+  .card {
+    margin-left: -19px;
+  }
+}
+
 /* マウスを合わせるとリンクのアンダーラインが横に伸びる */
 .underline-effect {
   position: relative;
