@@ -1,0 +1,299 @@
+@charset "utf-8";
+
+.title {
+  height: 310px;
+  background-image: url(../images/oiso/oisoconnect/img-item02.jpg);
+  background-repeat: no-repeat;
+  background-position: 5% 35% ;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title h1 {
+  font-family: 'Montserrat' , sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.title p {
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+.feature {
+  display: flex;
+  justify-content: space-between;
+  width: 930px;
+  max-width: 90%;
+  margin-top: 75px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: flex-start;
+}
+
+.gellery {
+  display: flex;
+  justify-content: space-between;
+  width: 930px;
+  max-width: 90%;
+  margin-top: 90px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: flex-start;
+}
+.gellery h2::after {
+  content: '';
+  display: block;
+  width: 36px;
+  height: 3px;
+  background-color: #000000;
+  margin-top: 20px;
+}
+
+.feature img {
+  width: 250px;
+  border-radius: 5px;
+}
+
+.feature-text {
+  max-width: 560px;
+  margin-right: 40px;
+}
+
+.feature-text h2 {
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 30px;
+}
+
+.feature-text h2::after {
+  content: '';
+  display: block;
+  width: 36px;
+  height: 3px;
+  background-color: #000000;
+  margin-top: 20px;
+}
+
+.feature-text p {
+  font-size: 15px;
+  line-height: 28px;
+  margin-top: 25px;
+}
+
+.item-list {
+  width: 930px;
+  max-width: 90%;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 240px);
+  column-gap: 95px;
+  row-gap: 70px;
+  justify-content: center;
+}
+
+.item-list img{
+  border-radius: 5px;
+}
+
+@keyframes hover-flash {
+  0% {
+    opacity: .2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.item-list dl {
+  margin-top: 20px;
+}
+
+.item-list dt {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.item-list dd {
+  font-size: 13px;
+  line-height: 20px;
+  margin-top: 10px;
+}
+
+.feature img:hover {
+  opacity:1;
+  -webkit-opacity: .5;
+  -moz-opacity: .5;
+  filter: alpha(opacity=50);  /* IE lt 8 */
+  -ms-filter: "alpha(opacity=50)"; /* IE 8 */
+}
+
+.item-list img:hover {
+  opacity:1;
+  -webkit-opacity: .5;
+  -moz-opacity: .5;
+  filter: alpha(opacity=50);  /* IE lt 8 */
+  -ms-filter: "alpha(opacity=50)"; /* IE 8 */
+}
+
+
+.footer {
+  margin-top: 100px;
+}
+
+@media (max-width: 800px) {
+  .item-list {
+    margin-top: 45px;
+    row-gap: 40px;
+  }
+}
+
+.map {
+  width: 930px;
+  max-width: 90%;
+  margin-top: 75px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.map iframe {
+  display: block;
+  width: 100%;
+  height: 400px;
+  margin-top: 25px;
+  background-color: #f8f8f8;
+  padding: 30px ;
+}
+
+.map h2::after {
+  content: '';
+  display: block;
+  width: 36px;
+  height: 3px;
+  background-color: #000000;
+  margin-top: 20px;
+}
+
+.card{
+  width: 288px;
+  height: auto;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,.2)
+}
+.card__imgframe,.card__imgframe4,.card__imgframe5,.card__imgframe6,.card__imgframe7,.card__imgframe8{
+  width: 100%;
+  height: auto;
+  padding-top: 75%;
+  box-sizing: border-box;
+  background-size:100% ;
+}
+
+.card__imgframe2 {
+  width: 100%;
+  height: auto;
+  padding-top: 75%;
+  box-sizing: border-box;
+  background-size:106% ;
+}
+.card__imgframe3 {
+  width: 100%;
+  height: auto;
+  padding-top: 75%;
+  box-sizing: border-box;
+  background-size:98% ;
+}
+
+
+
+.card__imgframe{
+  background-image: url(../images/hiratsuka/amalfi/img-item04.jpg);
+}
+.card__imgframe2{
+  background-image: url(../images/hiratsuka/amalfi/img-item05.jpg);
+}
+.card__imgframe3{
+  background-image: url(../images/hiratsuka/amalfi/img-item06.jpg);
+}
+.card__imgframe4{
+  background-image: url(../images/hiratsuka/hakubutukan/img-item01.jpg);
+}
+.card__imgframe5{
+  background-image: url(../images/hiratsuka/gyokou/img-item01.jpg);
+}
+.card__imgframe6{
+  background-image: url(../images/hiratsuka//3rdplace/img-item01.jpg);
+}
+.card__imgframe7{
+  background-image: url(../images/hiratsuka/tairiku/img-item01.jpg);
+}
+.card__imgframe8{
+  background-image: url(../images/common/noimage.png);
+}
+.card__textbox{
+  width: 100%;
+  height: auto;
+  padding: 20px 18px;
+  background: #fff;
+  box-sizing: border-box;
+}
+.card__textbox > * + *{
+  margin-top: 10px;
+}
+.card__titletext{
+  font-size: 15px;
+  font-weight: bold;
+  opacity: 0.8;
+  line-height: 125%;
+}
+.card__overviewtext{
+  font-size: 12px;
+  line-height: 150%;
+  opacity: 0.9;
+}
+.card__overviewtext1{
+  font-size: 12px;
+  line-height: 200%;
+  opacity: 0.8;
+  color: #238CCC;
+}
+
+.map dd {
+  font-size: 15px;
+  line-height: 20px;
+  margin-top: 10px;
+  opacity: 0.9;
+}
+
+p.hover-sample:hover{
+	color: #238CCC;
+	font-size: 16px;
+	font-weight: bold;
+  opacity: 1;
+}
+
+@media (max-width: 800px) {
+  .feature {
+    display: block;
+    width: 500px;
+    margin-top: 45px;
+  }
+
+  .feature-text {
+    margin-right: 0;
+  }
+
+  .reverse .feature-text {
+    margin-left: 0;
+  }
+
+  .feature img {
+    width: 100%;
+    height: auto;
+    margin-top: 25px;
+  }
+}

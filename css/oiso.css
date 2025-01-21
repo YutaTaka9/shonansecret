@@ -1,0 +1,190 @@
+@charset "utf-8";
+
+.title {
+  height: 310px;
+  background: linear-gradient(90deg, #238CCC, #C5E5EE);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  text-shadow: 1px 1px 10px #238CCC;
+}
+
+.title h1 {
+  font-family: 'Montserrat' , sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.title p {
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+.item-list {
+  width: 930px;
+  max-width: 90%;
+  margin-top: 75px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 240px);
+  column-gap: 95px;
+  row-gap: 70px;
+  justify-content: center;
+}
+
+.item-list dl {
+  margin-top: 20px;
+}
+
+.item-list dt {
+  font-weight: bold;
+}
+
+.item-list dd {
+  font-size: 13px;
+  line-height: 20px;
+  margin-top: 10px;
+}
+
+.footer {
+  margin-top: 100px;
+}
+
+@media (max-width: 800px) {
+  .item-list {
+    margin-top: 45px;
+    row-gap: 40px;
+  }
+}
+.card{
+  width: 288px;
+  height: auto;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,.2);
+  border-radius: 5px;
+}
+.card__imgframe,.card__imgframe2,.card__imgframe3,.card__imgframe4,.card__imgframe5,.card__imgframe6{
+  width: 100%;
+  height: auto;
+  padding-top: 75%;
+  box-sizing: border-box;
+  background-size:100% ;
+}
+
+.card__imgframe:hover{
+	opacity:0.5;
+	transition:0.3s;
+}
+.card__imgframe2:hover{
+	opacity:0.5;
+	transition:0.3s;
+}
+.card__imgframe3:hover{
+	opacity:0.5;
+	transition:0.3s;
+}
+.card__imgframe4:hover{
+	opacity:0.5;
+	transition:0.3s;
+}
+.card__imgframe5:hover{
+	opacity:0.5;
+	transition:0.3s;
+}
+.card__imgframe6:hover{
+	opacity:0.5;
+	transition:0.3s;
+}
+.card__imgframe7:hover{
+	opacity:0.5;
+	transition:0.3s;
+}
+.card__imgframe8:hover{
+	opacity:0.5;
+	transition:0.3s;
+}
+
+.card__imgframe{
+  background-image: url(../images/oiso/oisoconnect/img-item01.jpg);
+}
+.card__imgframe2{
+  background-image: url(../images/oiso/takaku/img-item01.jpg);
+}
+.card__imgframe3{
+  background-image: url(../images/oiso/zyouyama/img-item01.jpg);
+}
+.card__imgframe4{
+  background-image: url(../images/oiso/sagamien/img-item01.jpg);
+}
+.card__imgframe5{
+  background-image: url(../images/oiso/shigitatsuan/img-item01.jpg);
+}
+.card__imgframe6{
+  background-image: url(../images/oiso/cyayamachi/img-item01.jpg);
+}
+.card__textbox{
+  width: 100%;
+  height: auto;
+  padding: 20px 18px;
+  background: #fff;
+  box-sizing: border-box;
+}
+.card__textbox > * + *{
+  margin-top: 10px;
+}
+.card__titletext{
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 125%;
+  opacity: 0.8;
+}
+.card__overviewtext1{
+  font-size: 12px;
+  line-height: 80%;
+  opacity: 0.5;
+}
+.card__overviewtext{
+  font-size: 12px;
+  line-height: 150%;
+  opacity: 0.9;
+}
+
+/* マウスを合わせるとリンクのアンダーラインが横に伸びる */
+.underline-effect {
+  position: relative;
+  text-decoration: none;
+  color: black;  /* リンクの色 */
+}
+
+.underline-effect::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0;
+  height: 2px;
+  background-color: #238CCC;  /* マウスを重ねたときのアンダーラインの色 */
+  transition: all 0.3s ease;
+}
+
+.underline-effect:hover {
+  color: #238CCC;  /* マウスを重ねたときのリンクの色 */
+  background-color: transparent !important;
+}
+
+.underline-effect:hover::after {
+  width: 100%;
+}
+
+p.hover-sample:hover{
+	color: #238CCC;
+	font-size: 16px;
+	font-weight: bold;
+  opacity: 1;
+}
