@@ -139,7 +139,7 @@
 @media (max-width: 800px) {
   .first-view{
     height: calc(100vh - 50px);
-    background-image: url(../images/index/bg-main01.jpg);
+    background-image: url(../images/index/bg-main04.jpg);
     align-items: flex-start;
   }
 
